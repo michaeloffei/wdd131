@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2c5f7c;
+    --secondary-color: #4a8ba8;
+    --accent-color: #d4af37;
+    --text-dark: #333;
+    --text-light: #fff;
+    --bg-light: #f4f4f4;
+    --border-radius: 8px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+#course-title {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#course-title::after {
+    content: " - Michael Kwabena Offeh";
+    color: var(--accent-color);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    background-color: #1a3f54;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+    color: var(--text-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+main h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 2rem;
+    grid-column: 1 / -1;
+}
+
+.card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    margin: -2rem -2rem 1.5rem -2rem;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    text-align: center;
+}
+
+.card h3 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--secondary-color);
+    margin: 1.5rem 0 1rem 0;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: var(--border-radius);
+    display: block;
+    margin: 1rem auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card .flag-img {
+    max-width: 200px;
+}
+
+.card p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.card ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.card ul li:last-child {
+    border-bottom: none;
+}
+
+.card ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.card ul li a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.card ul li::before {
+    content: "▸ ";
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    main h1 {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 767px) {
+    #course-title {
+        font-size: 1.4rem;
+    }
+    
+    main h1 {
+        font-size: 2rem;
+    }
+    
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav a {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+}

@@ -3,9 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals – Michael Kwabena Offeh Home Page">
+    <meta name="author" content="Michael Kwabena Offeh">
+    <title>WDD 131 – Dynamic Web Fundamentals – Michael Kwabena Offeh</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
+    <header>
+        <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/michael-offei/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/rom/8?lang=eng&id=p28#p28">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
     
+    <main>
+      <h1>Michael Kwabena Offeh</h1>
+
+       <section class="card">
+          <h2>About Me</h2>
+            <div class="about">
+            <p>
+              My name is Michael Kwabena Offeh. I am from Ghana and currently working as a Physician Assistant at Prima Medical Centre. 
+              I am passionate about healthcare, technology, and data-driven solutions that improve patient outcomes. 
+              I enjoy coding, web development, and exploring the intersection of medicine and technology.
+            </p>
+            <img src="images/profile.jpg" alt="Michael Kwabena Offeh">
+            </div>
+
+      <h3>Accra, Ghana</h3>
+        <div class="location"></div>
+        <figure class="flag">
+          <img src="images/flag.png" alt="Flag of Ghana">
+          <figcaption><em>Official Flag of Ghana</em></figcaption>
+        </figure>
+            <p>
+          Ghana is a West African country known for its rich culture, hospitality, and peaceful nature. 
+          It is famous for its cocoa production, gold, and vibrant traditions. Accra, the capital city, 
+          is known for its beaches, architecture, and tech innovation hubs.
+          </p>
+        </div>
+    </section>
+     <section class="card">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://dev.to/">Dev.to Community</a></li>
+        <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+        <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+        <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+        <li><a href="https://www.udemy.com/">Udemy</a></li>
+        <li><a href="https://placeholder.com/">Image Placeholder</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="currentyear"></span> Michael Kwabena Offeh Ghana
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+  <script>
+  document.getElementById("currentyear").textContent = new Date().getFullYear();
+  document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+  </script>
 </body>
 </html>
+
+
