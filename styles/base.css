@@ -52,7 +52,7 @@ nav {
 }
 
 nav a {
-    color: var(--text-light);
+    color: #fdfdfd;
     text-decoration: none;
     padding: 0.5rem 1.5rem;
     border-radius: var(--border-radius);
@@ -101,7 +101,7 @@ main h1 {
 .card h2 {
     font-family: 'Poppins', sans-serif;
     color: white;
-    background-color: var(--primary-color);
+    background-color: #224b66;
     padding: 1rem;
     margin: -2rem -2rem 1.5rem -2rem;
     border-radius: var(--border-radius) var(--border-radius) 0 0;
