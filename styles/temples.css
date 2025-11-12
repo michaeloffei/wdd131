@@ -43,6 +43,8 @@ h1 {
 }
 
 nav {
+  display: flex;
+  justify-content: center;
   background-color: #eab308;
 }
 
