@@ -12,6 +12,10 @@
     padding-right: 2rem;
   }
 
+  .weather-icon-mobile {
+    display: none;
+  }
+
   .weather-title::after {
     content: "⛅";
     position: absolute;
