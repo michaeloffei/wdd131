@@ -1,0 +1,51 @@
+@media (min-width: 760px){
+  .data-card{
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    margin: 0;
+    background: rgba(255,255,255,0.95);
+  }
+
+  .weather-title {
+    position: relative;
+    padding-right: 2rem;
+  }
+
+  .weather-title::after {
+    content: "⛅";
+    position: absolute;
+    right: -1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+  }
+
+  .weather-card{
+    position: absolute;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    margin:0;
+    background: rgba(255,255,255,0.95);
+  }
+
+
+  .info{
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 1rem;
+    align-items: start;
+  }
+
+  
+  .info > .section-heading,
+  .info .section-heading {
+    grid-column: 1 / -1;
+  }
+
+
+  .hero-img{ aspect-ratio: 21/9; }
+
+  
+  .data-card, .weather-card{ max-width: 320px; }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghana - Country Page</title>
+    <meta name="description" content="Ghana place page: country facts, hero image, and sample weather." />
+    <meta name="author" content="Michael Kwabena Offeh">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <div class="banner">Welcome — Ghana: Republic of Ghana</div>
+
+    <header class="site-header">
+        <h1 class="place-title">Ghana</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="/wdd131/images/Independence Square.webp 800w, /wdd131/images/Independence Square.webp 1600w"
+                    type="image/webp" />
+                <img src="/wdd131/images/Independence Square.webp" alt="Independence Square, Accra, Ghana"
+                    class="hero-img" />
+            </picture>
+
+            <aside class="card data-card" aria-labelledby="data-heading">
+                <h2 id="data-heading">Data</h2>
+                <dl>
+                    <div class="row">
+                        <dt>Area:</dt>
+                        <dd>238,535 km²</dd>
+                    </div>
+                    <div class="row">
+                        <dt>Population:</dt>
+                        <dd>~31,000,000</dd>
+                    </div>
+                    <div class="row">
+                        <dt>Capital:</dt>
+                        <dd>Accra</dd>
+                    </div>
+                    <div class="row">
+                        <dt>Languages:</dt>
+                        <dd>English, Akan, Ewe</dd>
+                    </div>
+                    <div class="row">
+                        <dt>Currency:</dt>
+                        <dd>Ghanaian Cedi (GHS)</dd>
+                    </div>
+                    <div class="row">
+                        <dt>Time Zone:</dt>
+                        <dd>UTC</dd>
+                    </div>
+                    <div class="row">
+                        <dt>Calling Code:</dt>
+                        <dd>+233</dd>
+                    </div>
+                </dl>
+            </aside>
+
+           
+            <aside class="card weather-card" aria-labelledby="weather-heading">
+                <h2 id="weather-heading" class="weather-title">Weather</h2>
+                <ul class="weather-list">
+                    <li><strong>Temperature:</strong> <span id="temp">10</span>°C</li>
+                    <li><strong>Conditions:</strong> Partly Cloudy</li>
+                    <li><strong>Wind:</strong> <span id="wind">5</span> km/h</li>
+                    <li><strong>Wind Chill:</strong> <span id="windchill">...</span>°C</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section class="info">
+            <h2 class="section-heading">Explore Ghana</h2>
+
+            <article class="article-col">
+                <h3>About Ghana</h3>
+                <p>
+                    Ghana is a West African country known for its rich cultural heritage, gold mining, cocoa production,
+                    and friendly people.
+                    Accra is the capital city and home to major landmarks such as Independence Square.
+                </p>
+            </article>
+
+            <aside class="list-col">
+                <div class="callout">
+                    <h4>Quick Facts</h4>
+                    <ul>
+                        <li>Independence Day: 6 March</li>
+                        <li>Major Exports: Cocoa, Gold, Oil</li>
+                        <li>National Flower: Gold Coast lily</li>
+                    </ul>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-left">
+            <p>&copy; <span id="currentYear"></span> Michael Kwabena Offeh • Ghana</p>
+            <p id="lastModified">Last Modified: </p>
+        </div>
+    </footer>
+</body>
+
+</html>
+</body>
+
+</html>
