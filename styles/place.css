@@ -35,7 +35,7 @@ body{
 }
 
 .site-header{
-  background: linear-gradient(180deg, var(--accent) 0 100%);
+  background: var(--accent);
   color: #ffffff;
   padding: 1.25rem 1rem;
   border-bottom: 6px solid var(--green);
