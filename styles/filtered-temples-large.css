@@ -1,0 +1,44 @@
+@media (min-width: 45em) {
+  header {
+    text-align: left;
+    padding: 1rem 2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  nav {
+    background: none;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .navigation li {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .temple-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  figure {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  figure:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  }
+}
