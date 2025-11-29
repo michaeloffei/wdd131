@@ -72,9 +72,9 @@ const temples = [
   },
   {
         templeName: "Calabar Nigeria Temple",
-        location: "Calabar, Ghana",
+        location: "Calabar, Nigeria",
         dedicated:"2004, January, 11",
-        area: 17500,
+        area: 26000,
         imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-15503.jpg" 
   },
   {     templeName: "Birmingham Alabama Temple",
