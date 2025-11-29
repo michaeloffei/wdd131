@@ -89,6 +89,26 @@ h2 {
   gap: 1rem;
 }
 
+#temple-cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.temple-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.temple-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
 figure {
   background-color: #ffffff;
   padding: 0.5rem;
