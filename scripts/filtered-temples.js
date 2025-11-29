@@ -69,6 +69,19 @@ const temples = [
         dedicated:"2004, January, 11",
         area: 17500,
         imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-15503.jpg" 
+  },
+  {
+        templeName: "Calabar Nigeria Temple",
+        location: "Calabar, Ghana",
+        dedicated:"2004, January, 11",
+        area: 17500,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-15503.jpg" 
+  },
+  {     templeName: "Birmingham Alabama Temple",
+        location: "Alabama, United States Ghana",
+        dedicated:"2000, September, 3",
+        area: 10700,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/birmingham-alabama-temple/birmingham-alabama-temple-62630.jpg" 
   }
     // Add more temple objects here...
 ];
@@ -95,6 +108,24 @@ function displayTemples(templesArray) {
 }
 
 displayTemples(temples);
+
+document.querySelector("#home").addEventListener("click", () => displayTemples(temples));
+document.querySelector("#old").addEventListener("click", () => {
+  const oldTemples = temples.filter(t => new Date(t.dedicated).getFullYear() < 1900);
+  displayTemples(oldTemples);
+});
+document.querySelector("#new").addEventListener("click", () => {
+  const newTemples = temples.filter(t => new Date(t.dedicated).getFullYear() > 2000);
+  displayTemples(newTemples);
+});
+document.querySelector("#large").addEventListener("click", () => {
+  const largeTemples = temples.filter(t => t.area > 90000);
+  displayTemples(largeTemples);
+});
+document.querySelector("#small").addEventListener("click", () => {
+  const smallTemples = temples.filter(t => t.area < 10000);
+  displayTemples(smallTemples);
+});
 
 
 const yearSpan = document.getElementById("year");
