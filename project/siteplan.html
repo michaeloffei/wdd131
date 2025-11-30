@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prima Medical Centre - Website Plan</title>
+  <meta name="description"
+    content="Temple Album showcasing sacred temples around the world. Built by Michael Kwabena Offeh.">
+  <meta name="author" content="Michael Kwabena Offeh">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="siteplan.css">
+  <script src="scripts/siteplan.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Prima Medical Centre - Website Plan</h1>
+  </header>
+
+  <main>
+    <!-- SITE NAME -->
+    <section id="site-name">
+      <h2>Site Name</h2>
+      <p><strong>Prima Medical Centre</strong> – A healthcare hub providing quality medical services and patient
+        support.</p>
+      <p>Optional domain: primamedicalcentre.com</p>
+      <img src="/images/pmc_logo.jpg" alt="Prima Medical Centre Logo" width="150">
+    </section>
+
+    <!-- SITE PURPOSE -->
+    <section id="site-purpose">
+      <h2>Site Purpose</h2>
+      <p>
+        The website provides information about Prima Medical Centre services, allows patients to book appointments,
+        access health resources, contact medical staff, and stay updated on healthcare programs.
+      </p>
+    </section>
+
+    <!-- SCENARIOS -->
+    <section id="scenarios">
+      <h2>Scenarios</h2>
+      <ul>
+        <li>How can I book an appointment with a physician or specialist?</li>
+        <li>What health services are available for my condition?</li>
+        <li>How do I contact Prima Medical Centre for insurance claims or inquiries?</li>
+      </ul>
+    </section>
+
+    <!-- COLOR SCHEMA -->
+    <section id="color-schema">
+      <h2>Color Schema</h2>
+      <ul>
+        <li><span style="color:#004080;">#004080</span> – Primary color for headings and navigation bar (trust,
+          professionalism)</li>
+        <li><span style="color:#00A8E8;">#00A8E8</span> – Accent color for buttons, links, and highlights</li>
+        <li><span style="color:#F0F4F8;">#F0F4F8</span> – Background color for main content and cards</li>
+      </ul>
+    </section>
+
+    <!-- TYPOGRAPHY -->
+    <section id="typography">
+      <h2>Typography</h2>
+      <ul>
+        <li><strong>Roboto</strong> – Body text for readability and clarity</li>
+        <li><strong>Montserrat</strong> – Headings (h1, h2, h3) for a modern professional look</li>
+        <li><strong>Open Sans</strong> – Footer and secondary sections for contrast</li>
+      </ul>
+    </section>
+
+    <!-- WIREFRAME -->
+    <section id="wireframe">
+      <h2>Wireframe</h2>
+      <p>Wireframes representing the homepage layout:</p>
+      <img src="images/wireframe-mobile.png" alt="Mobile Wireframe - Prima Medical Centre" width="300">
+      <img src="images/wireframe-desktop.png" alt="Desktop Wireframe - Prima Medical Centre" width="500">
+      <p>Mobile view shows a single-column layout for easy navigation. Desktop view displays multiple sections: header,
+        appointment booking, services, and footer.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Prima Medical Centre | Michael Kwabena Offeh</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
+  </script>
+</body>
+
+</html>

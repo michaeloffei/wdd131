@@ -75,13 +75,19 @@ const temples = [
         location: "Calabar, Nigeria",
         dedicated:"2004, January, 11",
         area: 26000,
-        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-15503.jpg" 
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/calabar-nigeria-temple/calabar-nigeria-temple-65892.jpg" 
   },
   {     templeName: "Birmingham Alabama Temple",
-        location: "Alabama, United States Ghana",
+        location: "Alabama, United States",
         dedicated:"2000, September, 3",
         area: 10700,
         imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/birmingham-alabama-temple/birmingham-alabama-temple-62630.jpg" 
+  },
+  {     templeName: "Dallas Texas Temple",
+        location: "Texas, United States",
+        dedicated:"1984, October, 24",
+        area: 44207,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/dallas-texas-temple/dallas-texas-temple-59556-thumb.jpg" 
   }
     // Add more temple objects here...
 ];
