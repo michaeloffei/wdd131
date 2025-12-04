@@ -1,0 +1,137 @@
+:root {
+  --primary: #4a0d37;
+  --primary-dark: #2e0822;
+  --light: #ffffff;
+  --bg: #f6f2fa;
+  --border: #d7c9e8;
+  --accent: #b382d9;
+
+
+  --input-border: #cccccc;
+  --text-dark: #000000;
+  --text-light: #ffffff;
+
+  --radius: 8px;
+  --space: 1rem;
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: var(--primary);
+  color: var(--text-light);
+  text-align: center;
+  padding: 1.5rem;
+}
+
+main {
+  padding: var(--space);
+  max-width: 480px;
+  margin: auto;
+}
+
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: var(--light);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+label {
+  font-weight: bold;
+  margin-top: .5rem;
+}
+
+select,
+input,
+textarea {
+  padding: 8px;
+  border-radius: var(--radius);
+  border: 1px solid var(--input-border);
+  width: 100%;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+fieldset {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: .75rem;
+}
+
+legend {
+  font-weight: bold;
+}
+
+
+.submit-btn {
+  background: var(--primary);
+  color: var(--text-light);
+  padding: 12px;
+  border-radius: var(--radius);
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: var(--primary-dark);
+}
+
+.confirmation {
+  background: var(--light);
+  padding: 2rem;
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .7rem 1.2rem;
+  background: var(--primary);
+  color: var(--text-light);
+  text-decoration: none;
+  border-radius: var(--radius);
+}
+
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 1rem;
+  background: var(--primary);
+  color: var(--text-light);
+}
+
+
+
+@media (max-width: 400px) {
+  header {
+    padding: 1rem;
+  }
+
+  .review-form {
+    padding: 1rem;
+  }
+
+  .submit-btn,
+  .back-btn {
+    font-size: .9rem;
+    padding: 10px;
+  }
+}

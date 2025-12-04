@@ -1,11 +1,15 @@
 :root {
   --primary: #4a0d37;
+  --primary-dark: #2e0822;
   --light: #ffffff;
   --bg: #f6f2fa;
   --border: #d7c9e8;
+  --border-dark: #bca9d6;
   --accent: #b382d9;
   --radius: 8px;
   --space: 1rem;
+  --input-bg: #ffffff;
+  --input-border: #c8b7dd;
 }
 
 body {
@@ -13,6 +17,7 @@ body {
   background: var(--bg);
   margin: 0;
   padding: 0;
+  line-height: 1.5;
 }
 
 header {
@@ -38,16 +43,19 @@ main {
   border: 1px solid var(--border);
 }
 
+
 label {
   font-weight: bold;
   margin-top: .5rem;
 }
 
+
 select, input, textarea {
   padding: 8px;
   border-radius: var(--radius);
-  border: 1px solid #ccc;
+  border: 1px solid var(--input-border);
   width: 100%;
+  background: var(--input-bg);
 }
 
 textarea {
@@ -72,11 +80,13 @@ legend {
   border: none;
   font-size: 1rem;
   cursor: pointer;
+  transition: background .3s ease-in-out;
 }
 
 .submit-btn:hover {
-  background: #2e0822;
+  background: var(--primary-dark);
 }
+
 
 .confirmation {
   background: var(--light);
@@ -84,6 +94,7 @@ legend {
   border-radius: var(--radius);
   text-align: center;
 }
+
 
 .back-btn {
   display: inline-block;
@@ -93,7 +104,13 @@ legend {
   color: white;
   text-decoration: none;
   border-radius: var(--radius);
+  transition: background .3s;
 }
+
+.back-btn:hover {
+  background: var(--primary-dark);
+}
+
 
 footer {
   margin-top: 2rem;
@@ -101,4 +118,19 @@ footer {
   padding: 1rem;
   background: var(--primary);
   color: white;
+}
+
+
+@media (max-width: 480px) {
+  header {
+    padding: 1rem;
+  }
+
+  .review-form {
+    padding: 1rem;
+  }
+
+  .confirmation {
+    padding: 1.5rem;
+  }
 }
