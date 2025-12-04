@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description"
+        content="Temple Album showcasing sacred temples around the world. Built by Michael Kwabena Offeh.">
+    <meta name="author" content="Michael Kwabena Offeh">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/form_review.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+  <h1>Product Review</h1>
+</header>
+
+<main>
+  <form method="get" action="review.html" class="review-form">
+
+    <!-- PRODUCT NAME -->
+    <label for="product">Product Name</label>
+    <select id="product" name="product" required>
+      <option value="" disabled selected>Select a Product ...</option>
+      <!-- JS inserts options here -->
+    </select>
+
+    <!-- OVERALL RATING -->
+    <fieldset class="rating">
+      <legend>Overall Rating</legend>
+
+      <label>
+        <input type="radio" name="rating" value="1" required />
+        ★
+      </label>
+
+      <label>
+        <input type="radio" name="rating" value="2" />
+        ★★
+      </label>
+
+      <label>
+        <input type="radio" name="rating" value="3" />
+        ★★★
+      </label>
+
+      <label>
+        <input type="radio" name="rating" value="4" />
+        ★★★★
+      </label>
+
+      <label>
+        <input type="radio" name="rating" value="5" />
+        ★★★★★
+      </label>
+    </fieldset>
+
+    <!-- DATE -->
+    <label for="install-date">Date of Installation</label>
+    <input type="date" id="install-date" name="installDate" required>
+
+    <!-- FEATURES -->
+    <fieldset>
+      <legend>Useful Features (Check all that apply)</legend>
+
+      <label><input type="checkbox" name="features" value="durability"> Durability</label>
+      <label><input type="checkbox" name="features" value="ease"> Ease of Use</label>
+      <label><input type="checkbox" name="features" value="performance"> Performance</label>
+      <label><input type="checkbox" name="features" value="design"> Design</label>
+    </fieldset>
+
+    <!-- WRITTEN REVIEW -->
+    <label for="written-review">Written Review (Optional)</label>
+    <textarea id="written-review" name="review"></textarea>
+
+    <!-- USER NAME -->
+    <label for="username">Your Name (Optional)</label>
+    <input type="text" id="username" name="username">
+
+    <!-- SUBMIT -->
+    <input type="submit" value="Post Review" class="submit-btn">
+
+  </form>
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> 🌍 Product Review Form | Michael Kwabena Offeh</p>
+    <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>
