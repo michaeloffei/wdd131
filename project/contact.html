@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Prima Medical Centre</title>
+  <meta name="description" content="Contact Prima Medical Centre">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <!-- header/nav identical -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Prima Medical Centre</h1>
+      <button id="menu-toggle" class="hamburger" aria-expanded="false" aria-controls="main-nav">☰</button>
+      <nav id="main-nav" class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Contact & Appointments</h2>
+      <form id="contact-form" class="card" novalidate>
+        <label for="fullname">Full name</label>
+        <input id="fullname" name="fullname" required maxlength="80">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" inputmode="tel" pattern="[0-9+() -]{7,}" required>
+
+        <label for="reason">Reason</label>
+        <select id="reason" name="reason" required>
+          <option value="">Choose a reason</option>
+          <option value="consult">Consultation</option>
+          <option value="lab">Lab test</option>
+          <option value="referral">Referral</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Send Request</button>
+          <button type="reset" class="btn secondary">Reset</button>
+        </div>
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="left">
+        <p>&copy; <span id="year"></span> Prima Medical Centre</p>
+        <p id="last-modified">Last modified: </p>
+      </div>
+      <div class="right">
+        <a href="references.html">References</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
