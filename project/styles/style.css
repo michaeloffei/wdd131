@@ -85,8 +85,7 @@ body {
   margin: 1rem 0;
   border-radius: var(--radius);
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  display: block; /* keep image full-width followed by text below */
 }
 
 .hero-img {
@@ -102,6 +101,7 @@ body {
   padding: 1rem;
 }
 
+.hero-actions { margin-top: 0.75rem; }
 .card {
   background: var(--card);
   border-radius: var(--radius);
@@ -161,9 +161,28 @@ body {
   color: var(--accent);
 }
 
-/* Gallery Images */
+/* Gallery Images - defined below with aspect-ratio and object-fit */
+
+/* Gallery layout: single column by default and two columns on wider screens */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+@media(min-width: 720px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .gallery img {
+  display: block;
   width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
   border-radius: 8px;
 }
 
@@ -277,20 +296,16 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  /* Keep hero stacked: image then text, for a consistent layout across devices.
+     This helps preserve the intended flow where the image is above the headline and CTA. */
   .hero {
-    flex-direction: row;
-    gap: 1rem;
+    display: block;
   }
-
-  .hero-img {
-    flex: 2;
-  }
-
+  .hero-img { display: block; width: 100%; }
   .hero-text {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: block;
+    padding: 1.25rem 1rem; /* add a little more breathing room on larger screens */
+    text-align: center; /* center the heading/paragraph */
   }
 
   /* Horizontal form fields */

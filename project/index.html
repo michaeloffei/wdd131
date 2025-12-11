@@ -1,94 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prima Medical Centre</title>
+    <meta
+      name="description"
+      content="A informational website for Prima Medical Centre - primary private hospital in Kumasi, Ghana. Built by Michael Kwabena Offeh."
+    />
+    <meta name="author" content="Michael Kwabena Offeh" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/main.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prima Medical Centre</title>
-  <meta name="description" content="A informational website for Prima Medical Centre - primary private hospital in Kumasi, Ghana. Built by Michael Kwabena Offeh.">
-    <meta name="author" content="Michael Kwabena Offeh">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/style.css">
-  <script src="scripts/main.js" defer></script>
-</head>
-
-<body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="brand">Prima Medical Centre</h1>
-      <button id="menu-toggle" class="hamburger" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">☰</button>
-      <nav id="main-nav" class="main-nav" aria-label="Primary">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="references.html">References</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="hero">
-      <picture>
-        <img src="images/hero-prima-medical-centre.jpg" alt="An Ariel Shot of the Entrance of Prima Medical Centre" class="hero-img" loading="lazy">
-      </picture>
-      <div class="hero-text card">
-        <h2>Compassionate care, close to home</h2>
-        <p>Primary care, diagnostics, and specialist referrals — modern facilities with friendly staff.</p>
-        <a href="contact.html" class="btn">Book an Appointment</a>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="brand">Prima Medical Centre</h1>
+        <button
+          id="menu-toggle"
+          class="hamburger"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="Open menu"
+        >
+          ☰
+        </button>
+        <nav id="main-nav" class="main-nav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="references.html">References</a></li>
+          </ul>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <section class="features">
-      <h2>Our Services</h2>
-      <div class="grid">
-        <article class="feature card">
-          <h3>General Practice</h3>
-          <p>Routine exams, chronic disease management, immunizations.</p>
-        </article>
-        <article class="feature card">
-          <h3>Diagnostics</h3>
-          <p>On-site lab and imaging services (X-ray, ultrasound).</p>
-        </article>
-        <article class="feature card">
-          <h3>Telemedicine</h3>
-          <p>Video consultations for non-emergent care.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="testimonials">
-      <h2>Patient Feedback</h2>
-      <div id="testimonials-container" class="card">
-        <!-- testimonials inserted by JS -->
-      </div>
-      <form id="testimonial-form" class="small-form" aria-label="Add testimonial">
-        <label for="patient-name">Name</label>
-        <input id="patient-name" name="patientName" type="text" required maxlength="60">
-        <label for="testimonial-text">Feedback</label>
-        <textarea id="testimonial-text" name="testimonialText" required maxlength="300"></textarea>
-        <div class="form-actions">
-          <button type="submit" class="btn">Save Feedback</button>
-          <button type="button" id="clear-feedback" class="btn secondary">Clear Saved</button>
+    <main class="container">
+      <section class="hero">
+        <picture>
+          <img
+            src="images/hero-prima-medical-centre.jpg"
+            alt="An Ariel Shot of the Entrance of Prima Medical Centre"
+            class="hero-img"
+            loading="lazy"
+          />
+        </picture>
+        <div class="hero-text card">
+          <h2>Compassionate care, close to home</h2>
+          <p>
+            Primary care, diagnostics, and specialist referrals — modern
+            facilities with friendly staff.
+          </p>
+          <div class="hero-actions" aria-hidden="false">
+            <a href="contact.html" class="btn">Book an Appointment</a>
+          </div>
         </div>
-      </form>
-    </section>
-  </main>
+      </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="left">
-        <p>&copy; <span id="year"></span> Prima Medical Centre</p>
-        <p id="last-modified">Last modified: </p>
+      <section class="features">
+        <h2>Our Services</h2>
+        <div class="grid">
+          <article class="feature card">
+            <h3>General Practice</h3>
+            <p>Routine exams, chronic disease management, immunizations.</p>
+          </article>
+          <article class="feature card">
+            <h3>Diagnostics</h3>
+            <p>On-site lab and imaging services (X-ray, ultrasound).</p>
+          </article>
+          <article class="feature card">
+            <h3>Telemedicine</h3>
+            <p>Video consultations for non-emergent care.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <h2>Patient Feedback</h2>
+        <div id="testimonials-container" class="card">
+          <!-- testimonials inserted by JS -->
+        </div>
+        <form
+          id="testimonial-form"
+          class="small-form"
+          aria-label="Add testimonial"
+        >
+          <label for="patient-name">Name</label>
+          <input
+            id="patient-name"
+            name="patientName"
+            type="text"
+            required
+            maxlength="60"
+          />
+          <label for="testimonial-text">Feedback</label>
+          <textarea
+            id="testimonial-text"
+            name="testimonialText"
+            required
+            maxlength="300"
+          ></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn">Save Feedback</button>
+            <button type="button" id="clear-feedback" class="btn secondary">
+              Clear Saved
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="left">
+          <p>&copy; <span id="year"></span> Prima Medical Centre Built By Michael Kwabena Offeh</p>
+          <p id="last-modified">Last modified:</p>
+        </div>
+        <div class="right">
+          <a href="references.html">References</a>
+        </div>
       </div>
-      <div class="right">
-        <a href="references.html">References</a>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
