@@ -1,18 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact — Prima Medical Centre</title>
-  <meta name="description" content="Contact Prima Medical Centre">
+  <meta name="description" content="Contact Page for Prima Medical Centre for appointments or inquiries">
+  <meta name="author" content="Michael Kwabena Offeh">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
   <script src="scripts/main.js" defer></script>
 </head>
+
 <body>
-  <!-- header/nav identical -->
+  <!-- Header/Nav -->
   <header class="site-header">
     <div class="container">
       <h1 class="brand">Prima Medical Centre</h1>
@@ -21,46 +24,67 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li><a href="about.html">About Us</a></li>
           <li><a href="references.html">References</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  <!-- Main content -->
   <main class="container">
     <section>
       <h2>Contact & Appointments</h2>
-      <form id="contact-form" class="card" novalidate>
-        <label for="fullname">Full name</label>
-        <input id="fullname" name="fullname" required maxlength="80">
+      <p>Fill out the form below to book an appointment or send inquiries. Required fields are marked with <strong>*</strong>.</p>
 
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required>
+      <form id="contact-form" class="card modern-form" novalidate aria-label="Contact Form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fullname">Full Name <span aria-hidden="true">*</span></label>
+            <input id="fullname" name="fullname" type="text" placeholder="John Doe" required maxlength="80">
+          </div>
 
-        <label for="phone">Phone</label>
-        <input id="phone" name="phone" inputmode="tel" pattern="[0-9+() -]{7,}" required>
+          <div class="form-group">
+            <label for="email">Email <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required pattern="^\S+@\S+\.\S+$">
+          </div>
+        </div>
 
-        <label for="reason">Reason</label>
-        <select id="reason" name="reason" required>
-          <option value="">Choose a reason</option>
-          <option value="consult">Consultation</option>
-          <option value="lab">Lab test</option>
-          <option value="referral">Referral</option>
-        </select>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone <span aria-hidden="true">*</span></label>
+            <input id="phone" name="phone" type="tel" placeholder="+233 20 123 4567"
+              inputmode="tel" pattern="[0-9+() -]{7,}" required>
+          </div>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4"></textarea>
+          <div class="form-group">
+            <label for="reason">Reason <span aria-hidden="true">*</span></label>
+            <select id="reason" name="reason" required>
+              <option value="">-- Select a reason --</option>
+              <option value="consult">Consultation</option>
+              <option value="lab">Lab Test</option>
+              <option value="referral">Referral</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Your message (optional)"></textarea>
+        </div>
 
         <div class="form-actions">
           <button type="submit" class="btn">Send Request</button>
           <button type="reset" class="btn secondary">Reset</button>
         </div>
+
         <p id="form-status" role="status" aria-live="polite"></p>
       </form>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="left">
@@ -73,4 +97,5 @@
     </div>
   </footer>
 </body>
+
 </html>

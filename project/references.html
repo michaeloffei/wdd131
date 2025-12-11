@@ -1,35 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>References — Prima Medical Centre</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>References — Prima Medical Centre</title>
+      <meta name="author" content="Michael Kwabena Offeh">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="brand">Prima Medical Centre — References</h1>
-    </div>
-  </header>
-
-  <main class="container">
-    <section>
-      <h2>Sources & Attributions</h2>
-      <ul>
-        <li>Images: Pexels / Unsplash — (list specific photographers)</li>
-        <li>Medical facts: WHO, CDC (cite pages)</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="left">
-        <p>&copy; <span id="year"></span> Prima Medical Centre</p>
-        <p id="last-modified">Last modified: </p>
+  <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="brand">References</h1>
+        <button
+          id="menu-toggle"
+          class="hamburger"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          ☰
+        </button>
+        <nav id="main-nav" class="main-nav" aria-label="Primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="references.html">References</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
-  </footer>
-</body>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>References & Credits</h2>
+        <ul>
+          <li>
+            Images: Prima Medical Centre (copyright owner). Contact:
+            <a
+              href="https://share.google/TRR58zTgwvFsdoiob"
+              target="_blank"
+              rel="noopener noreferrer"
+              >image library</a
+            >.
+          </li>
+          <li>
+            Fonts: Google Fonts (Roboto, Poppins) —
+            <a
+              href="https://fonts.google.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >fonts.google.com</a
+            >
+          </li>
+          <li>
+            JavaScript: Custom scripts written for this site. Examples shown in
+            course exercises and adapted to my content.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="left">
+          <p>&copy; <span id="year"></span> Prima Medical Centre</p>
+          <p id="last-modified">Last modified:</p>
+        </div>
+        <div class="right">
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
